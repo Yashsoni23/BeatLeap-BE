@@ -18,7 +18,7 @@ app.post('/login', (req, res, next) => {
     const code = req.body.code;
     console.log(process.env.SPOTIFY_CLIENT_ID, process.env.SPOTIFY_CLIENT_SECRET);
     const spotifyWebAPI = new spotifyWebApi({
-        redirectUri: 'http://localhost:3000',
+        redirectUri: 'https://beatleap.netlify.app',
         clientId: process.env.SPOTIFY_CLIENT_ID,
         clientSecret: process.env.SPOTIFY_CLIENT_SECRET
     });
